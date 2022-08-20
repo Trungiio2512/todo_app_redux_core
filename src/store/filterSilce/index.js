@@ -1,6 +1,6 @@
 const initialState = {
   search: "",
-  state: "All",
+  status: "All",
   priorities: [],
 };
 
@@ -10,6 +10,17 @@ const filterSilce = (state = initialState, action) => {
       return {
         ...state,
         search: action.payload,
+      };
+    case "filters/status_filters_change":
+      return {
+        ...state,
+        status: action.payload,
+      };
+
+    case "filters/priorities_filters_change":
+      return {
+        ...state,
+        priorities: action.payload,
       };
     default:
       return state;

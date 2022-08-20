@@ -14,7 +14,7 @@ const initialState = [
   {
     id: 3,
     name: "Learn REACT-JS",
-    completed: true,
+    completed: false,
     priority: "High",
   },
 ];
