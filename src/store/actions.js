@@ -2,6 +2,10 @@ export const addTodo = (payload) => ({
   type: "todoList/add_todo",
   payload,
 });
+export const completedTodo = (payload) => ({
+  type: "todoList/completed_todo",
+  payload,
+});
 export const searchFilterChange = (payload) => ({
   type: "filters/search_filters_change",
   payload,

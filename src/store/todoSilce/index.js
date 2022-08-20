@@ -23,7 +23,12 @@ const todoSilce = (state = initialState, action) => {
   switch (action.type) {
     case "todoList/add_todo":
       return [...state, action.payload];
-
+    case "todoList/completed_todo":
+      return state.map((todo) => {
+        return todo.id === action.payload
+          ? { ...todo, completed: !todo.completed }
+          : todo;
+      });
     default:
       return state;
   }
