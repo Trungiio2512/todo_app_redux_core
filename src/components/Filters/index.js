@@ -1,11 +1,16 @@
 import { Col, Row, Input, Typography, Radio, Select, Tag } from "antd";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+// import {
+//   searchFilterChange,
+//   statusFilterChange,
+//   prioritiesFilterChange,
+// } from "../../store/actions";
 import {
   searchFilterChange,
   statusFilterChange,
   prioritiesFilterChange,
-} from "../../store/actions";
+} from "../../store/filterSilce";
 const { Search } = Input;
 
 export default function Filters() {

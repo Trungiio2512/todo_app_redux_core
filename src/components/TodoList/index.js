@@ -1,10 +1,10 @@
-import { Col, Row, Input, Button, Select, Tag } from "antd";
 import Todo from "../Todo";
-import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import { addTodo } from "../../store/actions";
 import { useState, useRef } from "react";
-
+import { useDispatch, useSelector } from "react-redux";
+import { Col, Row, Input, Button, Select, Tag } from "antd";
+// import { addTodo } from "../../store/actions";
+import { addTodo } from "../../store/todoSilce";
 import { todoRemainingSelector } from "../../store/selector";
 
 export default function TodoList() {
@@ -45,7 +45,7 @@ export default function TodoList() {
             name={todo.name}
             priority={todo.priority}
             completed={todo.completed}
-            id ={todo.id}
+            id={todo.id}
           />
         ))}
       </Col>

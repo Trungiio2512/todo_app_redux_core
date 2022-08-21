@@ -1,8 +1,8 @@
 import { Row, Tag, Checkbox } from "antd";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { completedTodo } from "../../store/actions";
-
+// import { completedTodo } from "../../store/actions";
+import { completedTodo } from "../../store/todoSilce";
 const priorityColorMapping = {
   High: "red",
   Medium: "blue",
